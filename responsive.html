@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>responsive website</title> <style>
+            body{ 
+                  border:1px solid salmon;
+                  max-width: 1140px;
+                  margin: 0 auto ;
+            }
+
+           .image-container{display: flex; }
+           .image-container div { width: 50%;}
+           .image-container img{width: 100%;}
+     @media screen and (max-width :576px) {.image-container{
+       flex-direction:column-reverse;}
+      .image-container div{ width:100%;}
+} 
+      </style>
+</head>
+<body>
+      <header>
+            <h2>responsive website</h2>
+            <ol>
+                  <li>Viewport meta tag</li>
+                  <li> CSS Relative Unit</li>
+                  <li>body max width and horizental center align</li>
+                  <li>image fluid</li>
+                  <li>two column flex and use media quwry with flex flex-direction column</li>
+                  <li>multi column:grid layout</li>
+                  <li>nemu responsive will need javascrip</li>
+            </ol>
+      </header>
+      <main>
+            <div class="image-container">
+                  <div><img src="image 2/tiger.png" alt=""></div>
+                  <div> <img src="image/food.webp" alt=""></div>
+            </div>      
+      </main>
+</body>
+</html>
